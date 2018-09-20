@@ -94,7 +94,7 @@ interface IImage {
 	 * @return bool
 	 * @since 8.1.0
 	 */
-	public function save($filePath = null, $mimeType = null);
+	public function save($filePath, $mimeType = null);
 
 	/**
 	 * @return resource Returns the image resource in any.

@@ -221,7 +221,6 @@ class AvatarController extends Controller {
 		try {
 			$image = new \OC_Image();
 			$image->loadFromData($content);
-			$image->readExif($content);
 			$image->fixOrientation();
 
 			if ($image->valid()) {
